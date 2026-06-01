@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tecnologias>
+    <tecnologia>
+        <nombre>HTML</nombre>
+        <descripcion>Lenguaje de marcado utilizado para crear la estructura de las páginas web.</descripcion>
+    </tecnologia>
+
+    <tecnologia>
+        <nombre>JavaScript</nombre>
+        <descripcion>Lenguaje de programación que permite agregar interactividad a los sitios web.</descripcion>
+    </tecnologia>
+
+    <tecnologia>
+        <nombre>XML</nombre>
+        <descripcion>Lenguaje utilizado para almacenar, organizar y transportar datos de forma estructurada.</descripcion>
+    </tecnologia>
+</tecnologias>
