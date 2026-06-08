@@ -39,4 +39,64 @@
             <clave>2026</clave>
         </usuario>
     </usuarios>
+
+    <aplicaciones>
+    <aplicacion>
+        <area>Medicina</area>
+        <descripcion>La IA ayuda a analizar estudios médicos, detectar enfermedades y apoyar diagnósticos.</descripcion>
+    </aplicacion>
+
+    <aplicacion>
+        <area>Educación</area>
+        <descripcion>Permite crear plataformas de aprendizaje personalizadas y asistentes educativos.</descripcion>
+    </aplicacion>
+
+    <aplicacion>
+        <area>Transporte</area>
+        <descripcion>Se usa en vehículos autónomos, rutas inteligentes y control de tráfico.</descripcion>
+    </aplicacion>
+
+    <aplicacion>
+        <area>Seguridad</area>
+        <descripcion>Ayuda a detectar fraudes, reconocer patrones y analizar riesgos.</descripcion>
+    </aplicacion>
+
+    <aplicacion>
+        <area>Videojuegos</area>
+        <descripcion>Permite crear personajes, enemigos y comportamientos más inteligentes.</descripcion>
+    </aplicacion>
+
+    <aplicacion>
+        <area>Asistentes virtuales</area>
+        <descripcion>Se usa en chatbots, sistemas de voz y atención automatizada.</descripcion>
+    </aplicacion>
+</aplicaciones>
+
+<amenazas>
+    <amenaza>
+        <nombre>Virus</nombre>
+        <descripcion>Programa malicioso que puede alterar el funcionamiento de un sistema.</descripcion>
+    </amenaza>
+
+    <amenaza>
+        <nombre>Malware</nombre>
+        <descripcion>Software diseñado para dañar, robar información o afectar dispositivos.</descripcion>
+    </amenaza>
+
+    <amenaza>
+        <nombre>Phishing</nombre>
+        <descripcion>Engaño digital que busca robar contraseñas o datos personales.</descripcion>
+    </amenaza>
+
+    <amenaza>
+        <nombre>Ransomware</nombre>
+        <descripcion>Ataque que bloquea archivos o sistemas y exige un pago para recuperarlos.</descripcion>
+    </amenaza>
+
+    <amenaza>
+        <nombre>Robo de identidad</nombre>
+        <descripcion>Uso no autorizado de datos personales para cometer fraudes.</descripcion>
+    </amenaza>
+</amenazas>
+
 </datos>

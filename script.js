@@ -115,3 +115,128 @@ function validarUsuario() {
             }
         });
 }
+
+function crearTarjetaAplicacion(area, descripcion) {
+    return `
+        <div class="card">
+            <h3>${area}</h3>
+            <p>${descripcion}</p>
+        </div>
+    `;
+}
+
+function cargarAplicaciones() {
+    fetch("datos.xml")
+        .then(respuesta => respuesta.text())
+        .then(datos => {
+            let parser = new DOMParser();
+            let xml = parser.parseFromString(datos, "text/xml");
+
+            let aplicaciones = xml.getElementsByTagName("aplicacion");
+            let contenido = "";
+
+            for (let i = 0; i < aplicaciones.length; i++) {
+                let area = aplicaciones[i].getElementsByTagName("area")[0].textContent;
+                let descripcion = aplicaciones[i].getElementsByTagName("descripcion")[0].textContent;
+
+                contenido += crearTarjetaAplicacion(area, descripcion);
+            }
+
+            document.getElementById("contenidoAplicaciones").innerHTML = contenido;
+        });
+}
+
+function filtrarAplicaciones() {
+    let textoFiltro = document.getElementById("filtroAplicaciones").value.toLowerCase();
+
+    fetch("datos.xml")
+        .then(respuesta => respuesta.text())
+        .then(datos => {
+            let parser = new DOMParser();
+            let xml = parser.parseFromString(datos, "text/xml");
+
+            let aplicaciones = xml.getElementsByTagName("aplicacion");
+            let contenido = "";
+
+            for (let i = 0; i < aplicaciones.length; i++) {
+                let area = aplicaciones[i].getElementsByTagName("area")[0].textContent;
+                let descripcion = aplicaciones[i].getElementsByTagName("descripcion")[0].textContent;
+
+                if (area.toLowerCase().includes(textoFiltro)) {
+                    contenido += crearTarjetaAplicacion(area, descripcion);
+                }
+            }
+
+            if (contenido === "") {
+                contenido = "<p>No se encontraron aplicaciones.</p>";
+            }
+
+            document.getElementById("contenidoAplicaciones").innerHTML = contenido;
+        });
+}
+
+function votar() {
+    let opcion = document.getElementById("opcion").value;
+
+    document.getElementById("resultadoEncuesta").innerHTML =
+        "Elegiste: " + opcion + ". Gracias por participar.";
+}
+
+function crearTarjetaAmenaza(nombre, descripcion) {
+    return `
+        <div class="card">
+            <h3>${nombre}</h3>
+            <p>${descripcion}</p>
+        </div>
+    `;
+}
+
+function cargarAmenazas() {
+    fetch("datos.xml")
+        .then(respuesta => respuesta.text())
+        .then(datos => {
+            let parser = new DOMParser();
+            let xml = parser.parseFromString(datos, "text/xml");
+
+            let amenazas = xml.getElementsByTagName("amenaza");
+            let contenido = "";
+
+            for (let i = 0; i < amenazas.length; i++) {
+                let nombre = amenazas[i].getElementsByTagName("nombre")[0].textContent;
+                let descripcion = amenazas[i].getElementsByTagName("descripcion")[0].textContent;
+
+                contenido += crearTarjetaAmenaza(nombre, descripcion);
+            }
+
+            document.getElementById("contenidoAmenazas").innerHTML = contenido;
+        });
+}
+
+function filtrarAmenazas() {
+    let textoFiltro = document.getElementById("filtroAmenazas").value.toLowerCase();
+
+    fetch("datos.xml")
+        .then(respuesta => respuesta.text())
+        .then(datos => {
+            let parser = new DOMParser();
+            let xml = parser.parseFromString(datos, "text/xml");
+
+            let amenazas = xml.getElementsByTagName("amenaza");
+            let contenido = "";
+
+            for (let i = 0; i < amenazas.length; i++) {
+                let nombre = amenazas[i].getElementsByTagName("nombre")[0].textContent;
+                let descripcion = amenazas[i].getElementsByTagName("descripcion")[0].textContent;
+
+                if (nombre.toLowerCase().includes(textoFiltro)) {
+                    contenido += crearTarjetaAmenaza(nombre, descripcion);
+                }
+            }
+
+            if (contenido === "") {
+                contenido = "<p>No se encontraron amenazas.</p>";
+            }
+
+            document.getElementById("contenidoAmenazas").innerHTML = contenido;
+        });
+}

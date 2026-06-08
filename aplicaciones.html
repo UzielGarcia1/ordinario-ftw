@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Aplicaciones de la IA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="cargarAplicaciones()">
+
+<header>
+    <h1>Aplicaciones de la Inteligencia Artificial</h1>
+    <p>Uso de la IA en diferentes áreas</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="ia.html">Inteligencia Artificial</a>
+    <a href="programacion.html">Programación</a>
+    <a href="hardware.html">Hardware</a>
+    <a href="aplicaciones.html">Aplicaciones IA</a>
+    <a href="futuro.html">Futuro</a>
+    <a href="ciberseguridad.html">Ciberseguridad</a>
+</nav>
+
+<main>
+    <article>
+        <h2>¿Dónde se aplica la IA?</h2>
+
+        <p>
+            La inteligencia artificial se utiliza en distintas áreas para automatizar tareas,
+            analizar información y mejorar la toma de decisiones.
+        </p>
+
+        <label for="filtroAplicaciones">Filtrar aplicaciones:</label>
+        <input type="text" id="filtroAplicaciones" placeholder="Ejemplo: medicina">
+        <button onclick="filtrarAplicaciones()">Buscar</button>
+        <button onclick="cargarAplicaciones()">Mostrar todo</button>
+
+        <section id="contenidoAplicaciones"></section>
+    </article>
+
+    <aside>
+        <h3>Dato importante</h3>
+        <p>
+            Muchas plataformas actuales usan IA para recomendar contenido, detectar fraudes
+            y personalizar servicios.
+        </p>
+    </aside>
+</main>
+
+<footer>
+    <p>Angel Uziel Garcia Saldaña</p>
+</footer>
+
+</body>
+</html>
