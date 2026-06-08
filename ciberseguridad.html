@@ -1,71 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Ciberseguridad</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body onload="cargarAmenazas()">
 
-<header>
-    <h1>Ciberseguridad</h1>
-    <p>Protección de datos, sistemas y redes</p>
-</header>
+    <header>
+        <h1>Ciberseguridad</h1>
+        <p>Protección de datos, sistemas y redes</p>
+    </header>
 
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="ia.html">Inteligencia Artificial</a>
-    <a href="programacion.html">Programación</a>
-    <a href="hardware.html">Hardware</a>
-    <a href="aplicaciones.html">Aplicaciones IA</a>
-    <a href="futuro.html">Futuro</a>
-    <a href="ciberseguridad.html">Ciberseguridad</a>
-</nav>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="ia.html">Inteligencia Artificial</a>
+        <a href="programacion.html">Programación</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="aplicaciones.html">Aplicaciones IA</a>
+        <a href="futuro.html">Futuro</a>
+        <a href="ciberseguridad.html">Ciberseguridad</a>
+    </nav>
 
-<main>
-    <article>
-        <h2>¿Qué es la ciberseguridad?</h2>
+    <main>
+        <article>
+            <h2>¿Qué es la ciberseguridad?</h2>
 
-        <p>
-            La ciberseguridad es el conjunto de técnicas y medidas utilizadas para proteger
-            computadoras, redes, sistemas y datos contra ataques digitales.
-        </p>
+            <p>
+                La ciberseguridad es el conjunto de técnicas y medidas utilizadas para proteger
+                computadoras, redes, sistemas y datos contra ataques digitales.
+            </p>
 
-        <div class="card">
-            <h3>Buenas prácticas</h3>
-            <ul>
-                <li>Usar contraseñas seguras.</li>
-                <li>Activar la verificación en dos pasos.</li>
-                <li>No abrir enlaces sospechosos.</li>
-                <li>Actualizar programas y sistemas.</li>
-                <li>Realizar copias de seguridad.</li>
-            </ul>
-        </div>
+            <img src="imagenes/ciberseguridad.jfif" alt="Protección de datos y sistemas" class="imagen">
 
-        <h2>Amenazas cargadas desde XML</h2>
+            <div class="card">
+                <h3>Buenas prácticas</h3>
+                <ul>
+                    <li>Usar contraseñas seguras.</li>
+                    <li>Activar la verificación en dos pasos.</li>
+                    <li>No abrir enlaces sospechosos.</li>
+                    <li>Actualizar programas y sistemas.</li>
+                    <li>Realizar copias de seguridad.</li>
+                </ul>
+            </div>
 
-        <label for="filtroAmenazas">Filtrar amenazas:</label>
-        <input type="text" id="filtroAmenazas" placeholder="Ejemplo: phishing">
+            <h2>Amenazas cargadas desde XML</h2>
 
-        <button onclick="filtrarAmenazas()">Buscar</button>
-        <button onclick="cargarAmenazas()">Mostrar todo</button>
+            <label for="filtroAmenazas">Filtrar amenazas:</label>
+            <input type="text" id="filtroAmenazas" placeholder="Ejemplo: phishing">
 
-        <section id="contenidoAmenazas"></section>
-    </article>
+            <button onclick="filtrarAmenazas()">Buscar</button>
+            <button onclick="cargarAmenazas()">Mostrar todo</button>
 
-    <aside>
-        <h3>Relación con la IA</h3>
-        <p>
-            La inteligencia artificial puede ayudar a detectar ataques, analizar comportamientos
-            sospechosos e identificar amenazas en tiempo real.
-        </p>
-    </aside>
-</main>
+            <section id="contenidoAmenazas"></section>
+        </article>
 
-<footer>
-    <p>Angel Uziel Garcia Saldaña</p>
-</footer>
+        <aside>
+            <h3>Relación con la IA</h3>
+            <p>
+                La inteligencia artificial puede ayudar a detectar ataques, analizar comportamientos
+                sospechosos e identificar amenazas en tiempo real.
+            </p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Angel Uziel Garcia Saldaña</p>
+    </footer>
 
 </body>
+
 </html>

@@ -45,15 +45,23 @@ function cargarTecnologias() {
 
             let tecnologias = xml.getElementsByTagName("tecnologia");
             let contenido = "";
+            let filasTabla = "";
 
             for (let i = 0; i < tecnologias.length; i++) {
                 let nombre = tecnologias[i].getElementsByTagName("nombre")[0].textContent;
                 let descripcion = tecnologias[i].getElementsByTagName("descripcion")[0].textContent;
 
                 contenido += crearTarjeta(nombre, descripcion);
+                filasTabla += `
+                <tr>
+                    <td>${nombre}</td>
+                    <td>${descripcion}</td>
+                </tr>
+                `;
             }
 
             document.getElementById("contenidoXML").innerHTML = contenido;
+            document.getElementById("tablaBody").innerHTML = filasTabla;
         });
 }
 
