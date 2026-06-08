@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<tecnologias>
-    <tecnologia>
-        <nombre>HTML</nombre>
-        <descripcion>Lenguaje de marcado utilizado para crear la estructura de las páginas web.</descripcion>
-    </tecnologia>
+<datos>
+    <tecnologias>
+        <tecnologia>
+            <nombre>HTML</nombre>
+            <descripcion>Lenguaje de marcado utilizado para crear la estructura de las páginas web.</descripcion>
+        </tecnologia>
 
-    <tecnologia>
-        <nombre>JavaScript</nombre>
-        <descripcion>Lenguaje de programación que permite agregar interactividad a los sitios web.</descripcion>
-    </tecnologia>
+        <tecnologia>
+            <nombre>CSS</nombre>
+            <descripcion>Lenguaje utilizado para aplicar diseño, colores, tamaños y distribución visual.</descripcion>
+        </tecnologia>
 
-    <tecnologia>
-        <nombre>XML</nombre>
-        <descripcion>Lenguaje utilizado para almacenar, organizar y transportar datos de forma estructurada.</descripcion>
-    </tecnologia>
-</tecnologias>
+        <tecnologia>
+            <nombre>JavaScript</nombre>
+            <descripcion>Lenguaje de programación que permite agregar interactividad a los sitios web.</descripcion>
+        </tecnologia>
+
+        <tecnologia>
+            <nombre>XML</nombre>
+            <descripcion>Lenguaje utilizado para almacenar, organizar y transportar datos estructurados.</descripcion>
+        </tecnologia>
+
+        <tecnologia>
+            <nombre>Inteligencia Artificial</nombre>
+            <descripcion>Área de la tecnología que permite crear sistemas capaces de aprender y tomar decisiones.</descripcion>
+        </tecnologia>
+    </tecnologias>
+
+    <usuarios>
+        <usuario>
+            <nombre>admin</nombre>
+            <clave>1234</clave>
+        </usuario>
+
+        <usuario>
+            <nombre>uziel</nombre>
+            <clave>2026</clave>
+        </usuario>
+    </usuarios>
+</datos>

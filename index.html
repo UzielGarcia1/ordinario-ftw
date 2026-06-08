@@ -10,36 +10,58 @@
 
 <header>
     <h1>Tecnología e Inteligencia Artificial</h1>
-    <p>Uso de HTML, CSS, JavaScript y XML</p>
+    <p>Proyecto final de Fundamentos de Tecnologías Web</p>
 </header>
 
 <nav>
     <a href="index.html">Inicio</a>
     <a href="ia.html">Inteligencia Artificial</a>
     <a href="programacion.html">Programación</a>
+    <a href="hardware.html">Hardware</a>
 </nav>
 
 <main>
-    <h2>Inicio</h2>
+    <article>
+        <h2>Inicio</h2>
 
-    <p>
-        Este sitio web tiene como objetivo explicar la importancia de la tecnología
-        y la inteligencia artificial en la actualidad.
-    </p>
-
-    <div class="card">
-        <h3>Objetivo del sitio</h3>
         <p>
-            Mostrar información básica sobre tecnología, inteligencia artificial
-            y programación usando herramientas vistas durante el semestre.
+            Este sitio web presenta información sobre tecnología, inteligencia artificial,
+            programación y hardware.
         </p>
-    </div>
 
-    <p id="fecha"></p>
+        <p>
+            El objetivo es demostrar el uso de HTML, CSS, JavaScript y XML en un sitio web
+            con navegación entre páginas.
+        </p>
+
+        <div class="card">
+            <h3>Importancia de la tecnología</h3>
+            <p>
+                La tecnología permite mejorar la comunicación, automatizar procesos,
+                crear herramientas digitales y resolver problemas de la vida diaria.
+            </p>
+        </div>
+
+        <p id="fecha"></p>
+    </article>
+
+    <aside>
+        <h3>Acceso de prueba</h3>
+
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" placeholder="Escribe tu usuario">
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" placeholder="Escribe tu contraseña">
+
+        <button onclick="validarUsuario()">Ingresar</button>
+
+        <p id="mensajeLogin"></p>
+    </aside>
 </main>
 
 <footer>
-    <p>Sitio web creado por: Angel Uziel</p>
+    <p>Sitio web creado como proyecto escolar</p>
 </footer>
 
 </body>
